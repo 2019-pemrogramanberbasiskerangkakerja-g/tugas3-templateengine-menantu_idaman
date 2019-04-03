@@ -1,0 +1,34 @@
+{
+  "name": "tugas2-offlinefirst-menantu_idaman",
+  "version": "1.0.0",
+  "description": "tugas2-offlinefirst-menantu_idaman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2019-pemrogramanberbasiskerangkakerja-g/tugas2-offlinefirst-menantu_idaman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2019-pemrogramanberbasiskerangkakerja-g/tugas2-offlinefirst-menantu_idaman/issues"
+  },
+  "homepage": "https://github.com/2019-pemrogramanberbasiskerangkakerja-g/tugas2-offlinefirst-menantu_idaman#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "http-msgs": "^1.0.9",
+    "jwt-login": "0.0.3",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "pg-pool": "^2.0.6",
+    "sequelize": "^4.43.0",
+    "synceddb-persistence-memory": "0.0.3",
+    "synceddb-persistence-postgres": "0.0.3",
+    "synceddb-server": "0.0.5"
+  }
+}
