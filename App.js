@@ -20,7 +20,7 @@ const sdbPersistence = require('synceddb-persistence-memory');
   
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(__dirname + '/web'));
+app.use(express.static(__dirname + '/html'));
 
 require('./server/seeders/routes')(app);
 require('./server/login/routes')(app);
@@ -31,11 +31,11 @@ app.get('/', (req, res) => res.status(200).send({
 }));
 
 app.get('/login', function(req, res) {
-	res.sendFile(path.join(__dirname + '/web/login.html'));
+	res.sendFile(path.join(__dirname + '/html/login.html'));
 });
 
 app.get('/register', function(req, res) {
-	res.sendFile(path.join(__dirname + '/web/register.html'));
+	res.sendFile(path.join(__dirname + '/html/register.html'));
 });
 
 app.get('/home', login.valid_login, (req, res) => res.status(200).send({
@@ -44,7 +44,7 @@ app.get('/home', login.valid_login, (req, res) => res.status(200).send({
 
 sdbPersistence.create().then(function(p) {
 	new Server({
-		port: 8080,
+		port: 1234,
 		store: p,
 	});
 });	
